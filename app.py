@@ -1,10 +1,9 @@
+# Import required libraries
 import streamlit as st
-import sklearn
 import pickle
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
-from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load from pickle Model file
 try:
@@ -58,7 +57,6 @@ def preprocess_text(text):
     return " ".join(stemming_filter)
 
 
-
 # 1. Input text
 text_input = st.text_area("Message Spam Detector")
 
@@ -66,7 +64,6 @@ text_input = st.text_area("Message Spam Detector")
 transformed_text = preprocess_text(text_input)
 
 # 3. Text into vector
-#tfidf = TfidfVectorizer(max_features = 3000)
 vector = tfidf.transform([transformed_text])
 
 # 3. Make predictions with the saved threshold
