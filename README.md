@@ -2,6 +2,9 @@
 
 This project focuses on detecting ***spam messages*** using machine learning techniques to classify textual data as spam or not spam. The dataset, sourced from **Kaggle**, contains labeled examples of both types of messages. Key steps in this project include preprocessing the text data, applying natural language processing techniques, and building a classification model. The model's performance was improved through hyperparameter tuning and evaluation to ensure accurate and reliable predictions.
 
+ 
+Exploratory Data analysis help me out to understand how different distributed. Visualization methods were used to create plots comparing the frequencies of spam and non-spam messages, providing a clear overview of their distribution. Word clouds were generated to highlight the most common words in spam and non-spam messages, offering insights into the language patterns of each category.
+
 ### Software And Tools Requirements
 1. [Github Account](https:\\github.com)
 2. [Vs Code IDE](https:\\code.visualstudio.com)
@@ -35,16 +38,6 @@ Meaningful features were extracted using:
 ## 🔄 Data Preparation
 
 Text data was transformed into a format suitable for machine learning models using **TF-IDF (Term Frequency-Inverse Document Frequency)**. This process represented text numerically, emphasizing the importance of words relative to the dataset.
-
----
-
-## 📊 Exploratory Data Analysis (EDA)
-
-To gain insights into the dataset:
-
-1. **Visualization**: Created plots to compare spam vs. non-spam message frequencies.
-2. **Word Clouds**: Generated word clouds for common words in spam and non-spam messages.
-3. **Correlation Analysis**: Investigated patterns and relationships within the data.
 
 ---
 
