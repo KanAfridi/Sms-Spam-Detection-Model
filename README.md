@@ -1,15 +1,16 @@
-# Spam Detection Project
+# SMS Spam Detection Project
 
 This project focuses on detecting ***spam messages*** using machine learning techniques to classify textual data as spam or not spam. The dataset, sourced from **Kaggle**, contains labeled examples of both types of messages. Key steps in this project include preprocessing the text data, applying natural language processing techniques, and building a classification model. The model's performance was improved through hyperparameter tuning and evaluation to ensure accurate and reliable predictions.
 
  
 Exploratory Data analysis help me out to understand how different distributed. Visualization methods were used to create plots comparing the frequencies of spam and non-spam messages, providing a clear overview of their distribution. Word clouds were generated to highlight the most common words in spam and non-spam messages, offering insights into the language patterns of each category.
 
+### [**SMS Spam Detection WebApp**](https://messsagespamdetector.streamlit.app/) 👈
 ### Software And Tools Requirements
 1. [Github Account](https:\\github.com)
 2. [Vs Code IDE](https:\\code.visualstudio.com)
 3. [Git Cli](https:https://git-scm.com/downloads)
-4. [soon i'll deploy this on web]
+4. [Streamlit\io](https://docs.streamlit.io/)
 
 
 ## 📋 Data Cleaning
