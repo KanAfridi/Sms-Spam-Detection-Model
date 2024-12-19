@@ -2,8 +2,11 @@
 import streamlit as st
 import pickle
 import nltk
-from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
+
+# Download nltk words
+nltk.download('stopwords')
+from nltk.corpus import stopwords
 
 # Load from pickle Model file
 try:
