@@ -3,9 +3,6 @@ import streamlit as st
 import pickle
 import nltk
 from nltk.stem import SnowballStemmer
-
-# Download nltk words
-nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 # Load from pickle Model file
@@ -17,7 +14,6 @@ except FileNotFoundError:
     print("Model file not found. Please make sure to train the model first.")
 
 # Load from pickle Victorizer file
-
 try:
     with open("Tfidf.pkl", "rb") as f:
         tfidf = pickle.load(f)
@@ -29,6 +25,9 @@ except FileNotFoundError:
 model = model_data["model"]
 threshold = model_data["threshold"]
 
+# Download nltk words and punkt_tab
+nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 # Title for the webapp
 st.title("Message Spam Detector")
@@ -48,7 +47,6 @@ def preprocess_text(text):
             filter_tokenzie.append(word)
     
     stopwords_filter = []
-    
     for word in filter_tokenzie:
         if word not in swords:
             stopwords_filter.append(word)
