@@ -6,21 +6,13 @@ from nltk.stem import SnowballStemmer
 from nltk.corpus import stopwords
 
 # Load from pickle Model file
-try:
-    with open("Model.pkl", "rb") as f:
-        model_data = pickle.load(f)
-        print("Model loaded successfully.")
-except FileNotFoundError:
-    print("Model file not found. Please make sure to train the model first.")
+with open("Model.pkl", "rb") as f:
+    model_data = pickle.load(f)
 
 # Load from pickle Victorizer file
-try:
-    with open("Tfidf.pkl", "rb") as f:
-        tfidf = pickle.load(f)
-        print("Victorizer loaded successfully.")
-except FileNotFoundError:
-    print("Victorizer file not found.")
- 
+with open("Tfidf.pkl", "rb") as f:
+    tfidf = pickle.load(f)
+
 # Load the model data
 model = model_data["model"]
 threshold = model_data["threshold"]
