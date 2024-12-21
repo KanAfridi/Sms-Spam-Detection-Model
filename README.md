@@ -25,6 +25,7 @@ The data was cleaned to ensure quality and consistency through the following ste
 3. **Tokenization and Lemmatization**:
    - Tokenized the text into meaningful units.
    - Applied lemmatization for better semantic representation.
+4. **Function Input at least 5 words** 
 
 ---
 
@@ -46,10 +47,10 @@ Text data was transformed into a format suitable for machine learning models usi
 
 Several machine learning algorithms were tested, and the **Random Forest Classifier** delivered the best performance. Key metrics included:
 
-- **Accuracy**: ~99%
+- **Accuracy**: ~97%
 - **Precision**: ~100%
 
-**Precision** was prioritized to minimize false positives, as misclassifying non-spam messages as spam can cause significant issues. The spam detection threshold was adjusted to 60% to further enhance precision.
+**Precision** was prioritized to minimize false positives, as misclassifying non-spam messages as spam can cause significant issues. The spam detection threshold was adjusted to 75% to further enhance precision.
 
 ---
 
