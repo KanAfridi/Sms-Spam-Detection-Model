@@ -6,8 +6,8 @@ from nltk.stem import SnowballStemmer
 from nltk.corpus import stopwords
 
 # Download nltk words and punkt_tab
-#nltk.download('stopwords')
-#nltk.download('punkt_tab')
+nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 # Load from pickle Model file
 with open("Model.pkl", "rb") as f:
