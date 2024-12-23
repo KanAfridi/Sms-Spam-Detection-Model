@@ -23,7 +23,7 @@ threshold = model_data["threshold"]
 
 
 # Title for the webapp
-st.title("Message Spam Detector")
+st.title("SMS Spam Detection Model")
 
 # 1. Validate word count function
 def word_count(text):
@@ -65,7 +65,7 @@ def preprocess_text(text):
 
 
 # 3. Input text
-text_input = st.text_area("Message Spam Detector", help = "Message should contain at least 3 words")
+text_input = st.text_area("SMS Spam Detector", help = "Message should contain at least 3 words")
 
 
 # 4. The predictions
