@@ -8,14 +8,12 @@ def load_model():
             return pickle.load(f)
     except:
         st.error("Model file not found")
-        return None
     
 
 # Load from pickle Victorizer file
 def load_tfidf():
     try:
-        with open("Tfidf.pkl", "rb") as f: 
+        with open("Tfidf.pkl", "rb") as f:
             return pickle.load(f)
     except:
         st.error("Tfidf file not found")
-        return None

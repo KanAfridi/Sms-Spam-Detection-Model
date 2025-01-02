@@ -6,7 +6,7 @@ import streamlit as st
 
 # 1. Validate word count function
 def word_count(text):
-    if not text or len(text.strip()) == 0:
+    if text is None or len(text.strip()) == 0:
         st.error("Please enter a valid message.")
         return None
     words = text.split()
