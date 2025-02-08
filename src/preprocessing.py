@@ -5,7 +5,7 @@ import streamlit as st
 
 # Download necessary NLTK resources
 nltk.download('stopwords')
-nltk.download('punkt_tab')
+nltk.download('punkt')
 
 # 1. Validate word count function
 def word_count(text):
