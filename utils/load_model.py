@@ -4,7 +4,7 @@ import streamlit as st
 # Load from pickle Model file
 def load_model():
     try:
-        with open("model.pkl", "rb") as f:
+        with open("Model.pkl", "rb") as f:
             return pickle.load(f)
     except:
         st.error("Model file not found")
