@@ -18,6 +18,7 @@ def word_count(text):
 
 
 # 2. Input text preprocessing function
+nltk.download('stopwords')
 def preprocess_text(text):
     swords = stopwords.words('english')
     stemmer = SnowballStemmer('english')
