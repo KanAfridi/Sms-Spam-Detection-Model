@@ -3,10 +3,6 @@ from nltk.stem import SnowballStemmer
 from nltk.corpus import stopwords
 import streamlit as st
 
-# Download necessary NLTK resources
-nltk.download('stopwords')
-nltk.download('punkt')
-
 # 1. Validate word count function
 def word_count(text):
     if text is None or len(text.strip()) == 0:
@@ -22,6 +18,10 @@ def word_count(text):
 
 # 2. Input text preprocessing function
 def preprocess_text(text):
+    # Download necessary NLTK resources
+    nltk.download('stopwords')
+    nltk.download('punkt')
+    
     swords = stopwords.words('english')
     stemmer = SnowballStemmer('english')
     
