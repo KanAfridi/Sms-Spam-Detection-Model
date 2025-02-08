@@ -3,6 +3,9 @@ from nltk.stem import SnowballStemmer
 from nltk.corpus import stopwords
 import streamlit as st
 
+# Download necessary NLTK resources
+nltk.download('stopwords')
+nltk.download('punkt')
 
 # 1. Validate word count function
 def word_count(text):
@@ -18,13 +21,11 @@ def word_count(text):
 
 
 # 2. Input text preprocessing function
-nltk.download('stopwords')
 def preprocess_text(text):
     swords = stopwords.words('english')
     stemmer = SnowballStemmer('english')
     
     data = text.lower()
-    
     tokenzie = nltk.word_tokenize(data)
     
     filter_tokenzie = []
