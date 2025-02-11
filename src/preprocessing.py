@@ -16,9 +16,11 @@ def word_count(text):
         return None
 
 
-# Download necessary NLTK resources
+# 🔽 Download necessary NLTK resources
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')  # Helps in tokenization
+nltk.download('omw-1.4')  # Optional: Helps with lemmatization (if needed)
 
 swords = stopwords.words('english')
 stemmer = SnowballStemmer('english')
