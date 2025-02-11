@@ -16,15 +16,16 @@ def word_count(text):
         return None
 
 
+# Download necessary NLTK resources
+nltk.download('stopwords')
+nltk.download('punkt')
+
+swords = stopwords.words('english')
+stemmer = SnowballStemmer('english')
+
+
 # 2. Input text preprocessing function
 def preprocess_text(text):
-    # Download necessary NLTK resources
-    nltk.download('stopwords')
-    nltk.download('punkt')
-    
-    swords = stopwords.words('english')
-    stemmer = SnowballStemmer('english')
-    
     data = text.lower()
     tokenzie = nltk.word_tokenize(data)
     
